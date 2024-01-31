@@ -132,10 +132,10 @@ section.range-section div.range-wrapper h2 {
 section.range-section div.range-wrapper {
   width: 1196px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   align-content: flex-start;
 }
 section.range-section div.range-wrapper div.range-intro {
@@ -258,7 +258,8 @@ section.reasons-section div.reasons-wrapper div.reason {
 section.reasons-section div.reasons-wrapper div.reason img {
   width: 100%;
   max-width: 280px;
-  height: auto;
+  height: 160px;
+  object-fit: contain;
   margin: 0 0 20px 0;
   display: block;
 }
@@ -317,6 +318,14 @@ section.obop-section div.obop-wrapper div p {
   margin: 0 0 20px 0;
   padding: 0;
   text-align: left;
+}
+.productplain {
+  width: 500px;
+}
+.productplain img {
+  height: 320px;
+  width: 500px;
+  object-fit: contain;
 }
 @media only screen and (max-width: 800px) {
   section.range-section div.range-wrapper a.range {
@@ -417,6 +426,13 @@ section.obop-section div.obop-wrapper div p {
     max-width: 360px;
     align-items: center;
   }
+  .productplain {
+    width: 340px;
+  }
+  .productplain img {
+    height: 240px;
+    width: 340px;
+  }
 }
 @media only screen and (max-width: 550px) {
   section.range-section div.range-wrapper a.range {
@@ -447,5 +463,12 @@ section.obop-section div.obop-wrapper div p {
     min-height: 60px;
     margin: 0px auto 0px auto;
     padding: 20px 20px 20px 20px;
+  }
+  .productplain {
+    width: 320px;
+  }
+  .productplain img {
+    height: 180px;
+    width: 320px;
   }
 }
