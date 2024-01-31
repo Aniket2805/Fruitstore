@@ -41,7 +41,6 @@
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet" />
   </head>
-
   <body>
     <!-- Spinner Start -->
     <div
@@ -96,7 +95,7 @@
               <a href="index.html" class="nav-item nav-link active">Home</a>
               <a href="" class="nav-item nav-link">About Us</a>
               <a href="shop.html" class="nav-item nav-link">Products</a>
-              <a href="" class="nav-item nav-link">Career</a>
+              <a href="" class="nav-item nav-link">Process</a>
               <a href="contact.html" class="nav-item nav-link">Contact Us</a>
             </div>
             <div class="d-flex m-3 me-0">
@@ -133,8 +132,14 @@
       <div class="container py-5">
         <div class="row g-5 align-items-center">
           <div class="col-md-12 col-lg-7">
-            <h4 class="mb-3 text-secondary">Our mission is Superior Quality</h4>
-            <h1 class="mb-5 display-3 text-primary">
+            <h1 class="mb-5 display-3 text-primary" id="hero1">
+              Our mission is Superior Quality
+            </h1>
+            <h1
+              class="mb-5 display-3 text-primary"
+              style="display: none"
+              id="hero2"
+            >
               We work with Smooth and Simplified Process
             </h1>
           </div>
@@ -145,25 +150,22 @@
               data-bs-ride="carousel"
             >
               <div class="carousel-inner" role="listbox">
-                <div class="carousel-item active rounded">
+                <div
+                  class="carousel-item active rounded"
+                  data-bs-interval="2500"
+                >
                   <img
                     src="img/hero-img-1.jpg"
                     class="img-fluid w-100 h-100 bg-secondary rounded"
                     alt="First slide"
                   />
-                  <!-- <a href="#" class="btn px-4 py-2 text-white rounded"
-                    >Fruites</a
-                  > -->
                 </div>
-                <div class="carousel-item rounded">
+                <div class="carousel-item rounded" data-bs-interval="5000">
                   <img
                     src="img/hero-img-2.jpg"
                     class="img-fluid w-100 h-100 rounded"
                     alt="Second slide"
                   />
-                  <!-- <a href="#" class="btn px-4 py-2 text-white rounded"
-                    >Vesitables</a
-                  > -->
                 </div>
               </div>
               <button
@@ -213,118 +215,168 @@
         <strong>4.5</strong> out of 5 based on <strong>11,885 reviews</strong>
       </div>
     </div>
-    <section class="range-section">
-      <div class="range-wrapper prospect-landing-page">
+    <section class="container py-5">
+      <div class="row prospect-landing-page">
         <div class="range-intro">
-          <h2><span class="yellow-underline">Explore our store</span></h2>
+          <h2 class="text-center">
+            <span class="yellow-underline">Explore our store</span>
+          </h2>
         </div>
-        <div id="carouselExampleIndicators" class="carousel productplain slide">
-          <div class="carousel-indicators">
+        <div class="col-lg-4">
+          <a
+            class="range push-banner desktop"
+            href="/startmyshop#6485"
+            data-label="prospect-range"
+            data-action="Fresh-fruit-and-veg"
+          >
+            <img
+              src="img/spicy.jpg"
+              style="object-fit: contain; width: 100%; border-radius: 20px"
+              class="range-desk"
+              alt="Fruit &amp; Veg Box swaps"
+              loading="lazy"
+            />
+            <h3
+              style="
+                background-color: #fdc500;
+                max-width: 360px;
+                text-align: center;
+                padding: 8px;
+                border-bottom-left-radius: 16px;
+                border-bottom-right-radius: 16px;
+              "
+            >
+              Fox Nuts (Phool Makhana) Spicy
+            </h3>
+          </a>
+        </div>
+        <div class="col-lg-4">
+          <div
+            id="carouselExampleIndicators"
+            class="carousel productplain slide"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/plain1.jpg" alt="..." />
+              </div>
+              <div class="carousel-item">
+                <img src="img/plain2.jpg" alt="..." />
+              </div>
+              <div class="carousel-item">
+                <img src="img/plain3.jpg" alt="..." />
+              </div>
+            </div>
             <button
+              class="carousel-control-prev"
               type="button"
               data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="0"
-              class="active"
-              aria-current="true"
-              aria-label="Slide 1"
-            ></button>
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
             <button
+              class="carousel-control-next"
               type="button"
               data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="1"
-              aria-label="Slide 2"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="2"
-              aria-label="Slide 3"
-            ></button>
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="img/plain1.jpg" alt="..." />
-            </div>
-            <div class="carousel-item">
-              <img src="img/plain2.jpg" alt="..." />
-            </div>
-            <div class="carousel-item">
-              <img src="img/plain3.jpg" alt="..." />
-            </div>
+          <div class="range">
+            <h3
+              style="
+                background-color: #fdc500;
+                max-width: 360px;
+                text-align: center;
+                padding: 8px;
+                border-bottom-left-radius: 16px;
+                border-bottom-right-radius: 16px;
+              "
+            >
+              Fox Nuts (Phool Makhana) Plain
+            </h3>
           </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
         </div>
-        <div class="range">
-          <h3
-            style="
-              background-color: #fdc500;
-              max-width: 400px;
-              text-align: center;
-              padding: 8px;
-              border-bottom-left-radius: 16px;
-              border-bottom-right-radius: 16px;
-            "
+        <div class="col-lg-4">
+          <a
+            class="range push-banner desktop"
+            href="/startmyshop#6485"
+            data-label="prospect-range"
+            data-action="Fresh-fruit-and-veg"
           >
-            Fox Nuts (Phool Makhana) Plain
-          </h3>
+            <img
+              src="img/salted.jpg"
+              style="object-fit: contain; width: 100%; border-radius: 20px"
+              class="range-desk"
+              alt="Fruit &amp; Veg Box swaps"
+              loading="lazy"
+            />
+            <h3
+              style="
+                background-color: #fdc500;
+                max-width: 360px;
+                text-align: center;
+                padding: 8px;
+                border-bottom-left-radius: 16px;
+                border-bottom-right-radius: 16px;
+              "
+            >
+              Fox Nuts (Phool Makhana) Salted
+            </h3>
+          </a>
         </div>
-        <a
-          href="/startmyshop"
-          class="cta-button push-banner"
-          data-label="prospect-range"
-          data-action="start-shopping"
-          >Shop Now</a
-        >
+        <div class="d-flex justify-content-center">
+          <a
+            href="/startmyshop"
+            class="cta-button push-banner"
+            data-label="prospect-range"
+            data-action="start-shopping"
+            >Contact Us</a
+          >
+        </div>
       </div>
     </section>
-    <section class="steps-section prospect-landing-page">
+    <section
+      class="steps-section prospect-landing-page"
+      style="background-color: #f7f7f7"
+    >
       <div class="steps-wrapper">
         <div class="steps-intro">
-          <h2><span class="yellow-underline">Get started</span></h2>
+          <h2><span class="yellow-underline">How we Work ?</span></h2>
         </div>
-        <div class="steps step-1">
-          <img
-            src="img/fe-1.png"
-            class="illustration"
-            alt="An illustration of an Abel and Cole delivery box"
-            loading="lazy"
-          />
-          <h3>Choose and tailor your weekly Fruit &amp; Veg Box*</h3>
-        </div>
-        <div class="steps step-2">
-          <img
-            src="img/fe-2.png"
-            class="illustration"
-            alt="An illustration of an Abel and Cole groceries"
-            loading="lazy"
-          />
-          <h3>Add essentials to finish your sustainable shop</h3>
-        </div>
-        <div class="steps step-3">
-          <img
-            src="img/fe-3.png"
-            class="illustration"
-            alt="An illustration of an Abel and Cole yellow van"
-            loading="lazy"
-          />
-          <h3>Get your ethical food delivery dropped to your door</h3>
+        <div>
+          <img src="img/work.jpg" />
         </div>
         <a
           href="/startmyshop"
@@ -335,48 +387,81 @@
         >
       </div>
     </section>
-    <section class="delivery-section">
-      <div class="delivery-wrapper">
-        <div>
-          <img
-            src="img/delivery.png"
-            alt="A photograph of an Abel and Cole delivery being made"
-            loading="lazy"
-          />
+    <section class="container-fluid" style="background-color: #fdc500">
+      <div class="row">
+        <div class="col-lg-5 d-flex align-items-center">
+          <img src="img/Why_choose_us.jpg" style="width: 100%" />
         </div>
-        <div class="prospect-landing-page">
-          <h2>How does Otterno Agro International work?</h2>
-          <!--				<p>Wondering how does Abel &amp; Cole work? Here&rsquo;s what you need to know about our sustainable grocery deliveries.</p>-->
-          <ul>
-            <li>Order online or on our app</li>
-            <li>£12 minimum order + £3.50 delivery charge</li>
-            <li>
-              We deliver to each area on the same day every week. Use our
-              <strong
-                ><a
-                  href="/contentpage?folder=AboutUs&amp;file=postcode-checker.htm"
-                  class="push-banner"
-                  data-label="prospect-how-it-works"
-                  data-action="postcode-checker"
-                  >postcode checker</a
-                ></strong
+        <div class="col-lg-7 prospect-landing-page py-5">
+          <div class="range-intro">
+            <h2>
+              <span class="yellow-underline"
+                >Why Choose Us: Your Trusted Phool Makhana Exporter!</span
               >
-              to check your delivery day
+            </h2>
+          </div>
+          <p>
+            Welcome to Otterno Agro International, your premier destination for
+            top-quality Phool Makhana exports. Here's why choosing us sets you
+            on the path to success:
+          </p>
+          <ul>
+            <li>
+              <strong>Superior Quality: </strong>We take pride in offering Phool
+              Makhana of the highest quality. Our products undergo stringent
+              quality control measures to ensure they meet the highest
+              standards, from cultivation to packaging.
             </li>
             <li>
-              No commitment – change, skip or cancel your order by midnight two
-              days before
+              <strong>Farm-to-Table Transparency: </strong>We maintain complete
+              transparency in our supply chain, from sourcing the finest Phool
+              Makhana directly from trusted farmers to delivering them to your
+              doorstep. You can trust the origin and quality of every product
+              you receive from us.
             </li>
-            <li>We’ll leave your order in a safe place when you’re out</li>
-            <li>Award-winning customer service</li>
+            <li>
+              <strong>Extensive Variety: </strong>Whether you need raw Phool
+              Makhana or customized varieties, we've got you covered. Explore
+              our wide range of options to suit your specific requirements, all
+              guaranteed to be fresh and delicious.
+            </li>
+            <li>
+              <strong>Sustainable Practices: </strong>We are committed to
+              sustainable farming practices that prioritize environmental
+              conservation and community well-being. By choosing us, you support
+              ethical and eco-friendly agriculture.
+            </li>
+            <li>
+              <strong>Competitive Pricing: </strong>Enjoy competitive pricing
+              without compromising on quality. We offer cost-effective solutions
+              for your Phool Makhana needs, ensuring maximum value for your
+              investment.
+            </li>
+            <li>
+              <strong>Global Reach: </strong>With our efficient logistics
+              network, we cater to clients worldwide. No matter where you are
+              located, you can rely on us for timely delivery and unparalleled
+              service.
+            </li>
+            <li>
+              <strong>Customer Satisfaction: </strong>Your satisfaction is our
+              top priority. Our dedicated team is always ready to assist you,
+              providing personalized service and addressing any concerns
+              promptly.
+            </li>
+            <li>
+              <strong>Commitment to Excellence: </strong>We are driven by a
+              passion for excellence in everything we do. From product quality
+              to customer service, we continuously strive to exceed your
+              expectations.
+            </li>
           </ul>
-          <a
-            href="/startmyshop"
-            class="cta-button push-banner"
-            data-label="prospect-delivery"
-            data-action="start-shopping"
-            >Contact Us</a
-          >
+          <p>
+            Choose Otterno Agro International as your Phool Makhana exporter and
+            experience the difference in quality, service, and reliability. Get
+            in touch with us today to discuss your requirements and let us be
+            your trusted partner in success.
+          </p>
         </div>
       </div>
     </section>
@@ -436,31 +521,6 @@
           data-action="start-shopping"
           >Contact Us</a
         >
-      </div>
-    </section>
-    <section class="obop-section">
-      <div class="obop-wrapper prospect-landing-page">
-        <div>
-          <img
-            src="img/fruitbann.png"
-            alt="images of the three charities and the one box: one portion logo"
-            loading="lazy"
-          />
-        </div>
-        <div>
-          <h2>Fight food poverty</h2>
-          <p>
-            We donate fresh, organic fruit or veg for every Fruit &amp; Veg Box
-            sold. Supporting three inspiring charities in our local community.
-          </p>
-          <a
-            href="#"
-            class="cta-button push-banner"
-            data-label="prospect-obop"
-            data-action="Find-out-more"
-            >Find out more</a
-          >
-        </div>
       </div>
     </section>
     <!-- Fact Start -->
@@ -772,6 +832,24 @@
       ><i class="fa fa-arrow-up"></i
     ></a>
 
+    <script>
+      var h1 = document.getElementById("hero1");
+      var h2 = document.getElementById("hero2");
+      var x = true;
+      // while (true) {
+      setInterval(() => {
+        if (x) {
+          h1.style.display = "none";
+          h2.style.display = "block";
+          x = false;
+        } else {
+          h1.style.display = "block";
+          h2.style.display = "none";
+          x = true;
+        }
+      }, 4000);
+      // }
+    </script>
     <!-- JavaScript Libraries -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>

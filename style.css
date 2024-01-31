@@ -319,13 +319,10 @@ section.obop-section div.obop-wrapper div p {
   padding: 0;
   text-align: left;
 }
-.productplain {
-  width: 500px;
-}
 .productplain img {
-  height: 320px;
-  width: 500px;
-  object-fit: contain;
+  border-radius: 20px;
+  height: 280px;
+  width: 100%;
 }
 @media only screen and (max-width: 800px) {
   section.range-section div.range-wrapper a.range {
@@ -333,6 +330,9 @@ section.obop-section div.obop-wrapper div p {
   }
   section.reasons-section div.reasons-wrapper div.reason {
     width: calc(100% / 2 - 20px);
+  }
+  .productplain img {
+    height: 340px;
   }
 }
 @media only screen and (max-width: 750px) {
@@ -426,12 +426,8 @@ section.obop-section div.obop-wrapper div p {
     max-width: 360px;
     align-items: center;
   }
-  .productplain {
-    width: 340px;
-  }
   .productplain img {
-    height: 240px;
-    width: 340px;
+    height: 280px;
   }
 }
 @media only screen and (max-width: 550px) {
@@ -464,11 +460,9 @@ section.obop-section div.obop-wrapper div p {
     margin: 0px auto 0px auto;
     padding: 20px 20px 20px 20px;
   }
-  .productplain {
-    width: 320px;
-  }
+}
+@media only screen and (max-width: 500px) {
   .productplain img {
-    height: 180px;
-    width: 320px;
+    height: 240px;
   }
 }
