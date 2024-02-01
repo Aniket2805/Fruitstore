@@ -186,14 +186,14 @@ img {
 }
 
 @media screen and (min-width: 992px) {
-  .card {
+  .makhana {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 1.5rem;
   }
   .card-wrapper {
     display: flex;
-    align-items: flex-start;
+    flex-direction: column;
     align-content: flex-start;
   }
   .product-imgs {
